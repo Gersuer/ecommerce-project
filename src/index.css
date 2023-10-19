@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Josefin Slab', serif;
+}
+
+
+
+body::-webkit-scrollbar {
+  background: #efefef;
+  width: 15px;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f7bce1c1;
+}

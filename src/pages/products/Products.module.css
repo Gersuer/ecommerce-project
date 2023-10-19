@@ -1,0 +1,19 @@
+.products{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.card_container{
+    width: 300px;
+    min-height: 400px;
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
