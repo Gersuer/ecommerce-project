@@ -14,10 +14,10 @@ const Home = () => {
           <span>AQUI VOCÊ ENCONTRA</span>
         </div>
         <div className={styles.grid}>
-          {itens?.amostra.map(item => (
+          {itens && itens?.amostra.map(item => (
             <div key={item.id} className={styles.item}>
               <span>{item.title}</span>
-              <Link to={`products/${item.type}`}>
+              <Link className={styles.zoom_container} to={`products/${item.type}`}>
                 <img src={item.img} alt={item.name} />
               </Link>
             </div>

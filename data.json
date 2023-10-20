@@ -2,7 +2,7 @@
     "produtos":{
         "almofadas": [
             {
-                "id": 1,
+                "id": "1",
                 "name": "Almofada 1",
                 "preco": "59.99",
                 "qtd": "0",

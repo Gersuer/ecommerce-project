@@ -9,10 +9,7 @@ import { ProductContext } from '../../productContext/context'
 
 
 const Header = () => {
-    const { itens } = useContext(ProductContext);
-    if (itens) {
-        console.log(itens);
-    }
+    const { carrinho } = useContext(ProductContext);
     return (
         <div className={styles.header_component}>
             <header className={styles.header}>
@@ -36,10 +33,10 @@ const Header = () => {
                 </div>
 
                 <div className={styles.carrinho_container}>
-                    {/* {itens && itens.length > 0 ? (
-                        <span>{itens.length}</span>
+                    {carrinho && carrinho.length > 0 ? (
+                        <span>{carrinho.length}</span>
 
-                    ) : ('')} */}
+                    ) : ('')}
                     <Link to='/carrinho'>
                         <PiShoppingCart className={styles.icon} size={35} />
                     </Link>

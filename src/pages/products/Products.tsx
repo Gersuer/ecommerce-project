@@ -12,20 +12,15 @@ const Products = () => {
   const params = useParams();
   useEffect(() => {
     if (params.id === 'bercos') {
-      console.log(params.id)
       setProducts(itens?.bercos)
     }
     if (params.id === 'almofadas') {
-      console.log(params)
-
       setProducts(itens?.almofadas)
     }
     if (params.id === 'camas') {
-      console.log(params)
-
       setProducts(itens?.camas)
     }
-  }, [params, itens?.almofadas, itens?.amostra, itens?.bercos, itens?.camas])
+  }, [params, itens?.almofadas, itens?.amostra, itens?.bercos, itens?.camas]);
 
   return (
     <div className={styles.products}>
