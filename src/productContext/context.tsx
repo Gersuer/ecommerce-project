@@ -12,7 +12,7 @@ interface ItensProps {
     camas?: ItemProps[]
 }
 export interface ItemProps {
-    id: number
+    id: string
     name: string
     preco: number
     qtd: string

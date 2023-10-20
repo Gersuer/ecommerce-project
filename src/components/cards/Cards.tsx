@@ -23,7 +23,7 @@ const Cards = (produto: productProps) => {
 
     return (
         <div key={produto.id} className={styles.card}>
-            <Link className={styles.link} to={`/details/${produto.id}`}>
+            <Link className={styles.link} to={`/details/${produto.type}/${produto.id}`}>
                 <img src={produto.img} alt={produto.name} />
             </Link>
             <div className={styles.product_info}>
