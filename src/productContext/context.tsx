@@ -4,15 +4,8 @@ import axios from "axios";
 interface ChildrenProps {
     children: ReactNode
 }
-
-interface ItensProps {
-    amostra: ItemProps[]
-    almofadas?: ItemProps[]
-    bercos?: ItemProps[]
-    camas?: ItemProps[]
-}
 export interface ItemProps {
-    id: string
+    id: number
     name: string
     preco: number
     qtd: string
@@ -23,20 +16,22 @@ export interface ItemProps {
 }
 
 interface ContextProps {
-    itens?: ItensProps
+    itens?: ItemProps[]
     loading: boolean
     carrinho: ItemProps[]
     addCart: (item: ItemProps) => void
     totalPurchase: number
+    menuItems?: ItemProps[]
 }
 
 export const ProductContext = createContext({} as ContextProps);
 
 function ProductsProvider({ children }: ChildrenProps) {
-    const [itens, setItens] = useState<ItensProps>();
+    const [itens, setItens] = useState<ItemProps[]>();
+    const [menuItems, setMenuItems] = useState<ItemProps[]>()
     const [loading, setLoading] = useState(false);
     const [carrinho, setCarrinho] = useState<ItemProps[]>([]);
-    const [totalPurchase, setTotalPurchased] = useState<number>(0)
+    const [totalPurchase, setTotalPurchased] = useState<number>(0);
 
     useEffect(() => {
         let total = 0;
@@ -52,13 +47,25 @@ function ProductsProvider({ children }: ChildrenProps) {
             await axios.get("http://localhost:3000/produtos")
                 .then(itens => {
                     setItens(itens.data)
-                    setLoading(false)
                 }).catch(err => {
                     console.log(err.message)
                 })
+
+            await axios.get("http://localhost:3000/amostra")
+                .then(response => {
+                    setMenuItems(response.data)
+                }).catch(err => {
+                    console.log(err)
+                })
+
+            setLoading(false)
+
         }
+
         fetchItems();
     }, []);
+
+    console.log(menuItems)
 
     function addCart(item: ItemProps) {
         //Verificar se o item já foi adicionado.
@@ -89,7 +96,6 @@ function ProductsProvider({ children }: ChildrenProps) {
         setCarrinho([...carrinho, newItem]);
     }
 
-
     return (
         <ProductContext.Provider
             value={{
@@ -97,7 +103,8 @@ function ProductsProvider({ children }: ChildrenProps) {
                 loading,
                 carrinho,
                 addCart,
-                totalPurchase
+                totalPurchase,
+                menuItems
             }}
         >
             {children}

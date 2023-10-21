@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from 'react';
 import { ProductContext } from '../../../productContext/context';
 
 interface productProps {
-  id: string
+  id: number
   name: string
   preco: number
   qtd: string
@@ -17,43 +17,16 @@ interface productProps {
 const ProductsDetails = () => {
   const param = useParams();
   const { itens } = useContext(ProductContext);
-  const [productDetail, setProductDetail] = useState<productProps>()
+  const [productDetail, setProductDetail] = useState<productProps>();
 
   useEffect(() => {
-
-    if (param.tipo === 'almofadas') {
-      console.log('entrou aqui')
-      itens?.almofadas?.map(item => {
-        if (item.id === param.id) {
-          const produto = item;
-          setProductDetail(produto)
-        }
-      })
-      
-    }
-
-    if (param.tipo === 'camas') {
-      console.log('entrou aqui')
-      itens?.camas?.map(item => {
-        if (item.id === param.id) {
-          const produto = item;
-          setProductDetail(produto)
-        }
-      })
-      
-    }
-
-    if (param.tipo === 'bercos') {
-      console.log('entrou aqui')
-      itens?.bercos?.map(item => {
-        if (item.id === param.id) {
-          const produto = item;
-          setProductDetail(produto)
-        }
-      })
-      
-    }
-  }, [param, itens?.almofadas, itens?.camas, itens?.bercos])
+    itens?.map(item => {
+      if ((item.id).toString() === param.id) {
+        console.log('Entrou aqui')
+        setProductDetail(item)
+      }
+    });
+  }, [itens, param.id])
 
   return (
     <>

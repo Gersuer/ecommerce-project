@@ -10,17 +10,13 @@ const Products = () => {
   const { itens, loading } = useContext(ProductContext)
   const [products, setProducts] = useState<ItemProps[]>();
   const params = useParams();
+
+  console.log(params)
+
   useEffect(() => {
-    if (params.id === 'bercos') {
-      setProducts(itens?.bercos)
-    }
-    if (params.id === 'almofadas') {
-      setProducts(itens?.almofadas)
-    }
-    if (params.id === 'camas') {
-      setProducts(itens?.camas)
-    }
-  }, [params, itens?.almofadas, itens?.amostra, itens?.bercos, itens?.camas]);
+    const itemFilter = itens?.filter(item => item.type === params.id);
+    setProducts(itemFilter);
+  }, [params, itens]);
 
   return (
     <div className={styles.products}>

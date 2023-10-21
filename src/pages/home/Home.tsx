@@ -5,7 +5,7 @@ import { useContext } from 'react'
 import { ProductContext } from '../../productContext/context'
 const Home = () => {
 
-  const { itens } = useContext(ProductContext);
+  const { menuItems } = useContext(ProductContext);
 
   return (
     <Container>
@@ -14,7 +14,7 @@ const Home = () => {
           <span>AQUI VOCÊ ENCONTRA</span>
         </div>
         <div className={styles.grid}>
-          {itens && itens?.amostra.map(item => (
+          {menuItems && menuItems?.map(item => (
             <div key={item.id} className={styles.item}>
               <span>{item.title}</span>
               <Link className={styles.zoom_container} to={`products/${item.type}`}>

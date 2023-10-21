@@ -1,255 +1,243 @@
 {
-    "produtos":{
-        "almofadas": [
-            {
-                "id": "1",
-                "name": "Almofada 1",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/1.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "2",
-                "name": "Almofada 2",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/2.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "3",
-                "name": "Almofada 3",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/3.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "4",
-                "name": "Almofada 4",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/4.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "5",
-                "name": "Almofada 5",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/5.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "6",
-                "name": "Almofada 6",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/6.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "7",
-                "name": "Almofada 7",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/7.png",
-                "type": "almofadas"
-            },
-            {
-                "id": "8",
-                "name": "Cama 8",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/almofadas/7.png",
-                "type": "almofadas"
-            }
-        ],
-
-        "camas":
-        [
-            {
-                "id": "1",
-                "name": "Cama 1",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/1.png",
-                "type": "camas"
-            },
-            {
-                "id": "2",
-                "name": "Cama 2",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/2.png",
-                "type": "camas"
-            },
-            {
-                "id": "3",
-                "name": "Cama 3",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/3.png",
-                "type": "camas"
-            },
-            {
-                "id": "4",
-                "name": "Cama 4",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/4.png",
-                "type": "camas"
-            },
-            {
-                "id": "5",
-                "name": "Cama 5",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/5.png",
-                "type": "camas"
-            },
-            {
-                "id": "6",
-                "name": "Cama 6",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/6.png",
-                "type": "camas"
-            },
-            {
-                "id": "8",
-                "name": "Cama 8",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/8.png",
-                "type": "camas"
-            }
-        ],
-
-        "bercos":
-        [
-            {
-                "id": "1",
-                "name": "Berço 1",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/1.png",
-                "type": "bercos"
-            },
-            {
-                "id": "2",
-                "name": "Berço 2",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/2.png",
-                "type": "bercos"
-            },
-            {
-                "id": "3",
-                "name": "Berço 3",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/3.png",
-                "type": "bercos"
-            },
-            {
-                "id": "4",
-                "name": "Berço 4",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/4.png",
-                "type": "berco"
-            },
-            {
-                "id": "5",
-                "name": "Berço 5",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/5.png",
-                "type": "bercos"
-            },
-            {
-                "id": "6",
-                "name": "Berço 6",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/6.png",
-                "type": "bercos"
-            },
-            {
-                "id": "7",
-                "name": "Berço 7",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/7.png",
-                "type": "bercos"
-            },
-            {
-                "id": "8",
-                "name": "Berço 8",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/8.png",
-                "type": "bercos"
-            }
-            
-        ],
-
-        "amostra":[
-            {
-                "id": "1",
-                "name": "Berço 1",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/bercos/1.png",
-                "type": "bercos",
-                "title": "Infantil"
-            },
-            {
-                "id": "4",
-                "name": "Almofada 4",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "./src/assets/images/almofadas/4.png",
-                "type": "almofadas",
-                "title": "Sala"
-            },
-            {
-                "id": "3",
-                "name": "Cama 3",
-                "preco": "59.99",
-                "qtd": "0",
-                "total": "0",
-                "img": "/src/assets/images/roupasdecama/3.png",
-                "type": "camas",
-                "title": "Quarto"
-            }
-        ]
+  "produtos": [
+    {
+      "id": "1",
+      "name": "Almofada 1",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/1.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "2",
+      "name": "Almofada 2",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/2.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "3",
+      "name": "Almofada 3",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/3.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "4",
+      "name": "Almofada 4",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/4.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "5",
+      "name": "Almofada 5",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/5.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "6",
+      "name": "Almofada 6",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/6.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "7",
+      "name": "Almofada 7",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/7.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "8",
+      "name": "Cama 8",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/7.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "9",
+      "name": "Cama 1",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/1.png",
+      "type": "camas"
+    },
+    {
+      "id": "10",
+      "name": "Cama 2",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/2.png",
+      "type": "camas"
+    },
+    {
+      "id": "11",
+      "name": "Cama 3",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/3.png",
+      "type": "camas"
+    },
+    {
+      "id": "12",
+      "name": "Cama 4",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/4.png",
+      "type": "camas"
+    },
+    {
+      "id": "13",
+      "name": "Cama 5",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/5.png",
+      "type": "camas"
+    },
+    {
+      "id": "14",
+      "name": "Cama 6",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/6.png",
+      "type": "camas"
+    },
+    {
+      "id": "15",
+      "name": "Cama 8",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/8.png",
+      "type": "camas"
+    },
+    {
+      "id": "16",
+      "name": "Berço 1",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/1.png",
+      "type": "bercos"
+    },
+    {
+      "id": "17",
+      "name": "Berço 2",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/2.png",
+      "type": "bercos"
+    },
+    {
+      "id": "18",
+      "name": "Berço 3",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/3.png",
+      "type": "bercos"
+    },
+    {
+      "id": "19",
+      "name": "Berço 4",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/4.png",
+      "type": "berco"
+    },
+    {
+      "id": "20",
+      "name": "Berço 5",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/5.png",
+      "type": "bercos"
+    },
+    {
+      "id": "21",
+      "name": "Berço 6",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/6.png",
+      "type": "bercos"
+    },
+    {
+      "id": "22",
+      "name": "Berço 7",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/7.png",
+      "type": "bercos"
+    },
+    {
+      "id": "23",
+      "name": "Berço 8",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/8.png",
+      "type": "bercos"
     }
+  ],
+  "amostra": [
+    {
+      "id": "1",
+      "name": "Berço 1",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/1.png",
+      "type": "bercos",
+      "title": "Infantil"
+    },
+    {
+      "id": "4",
+      "name": "Almofada 4",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "./src/assets/images/almofadas/4.png",
+      "type": "almofadas",
+      "title": "Sala"
+    },
+    {
+      "id": "3",
+      "name": "Cama 3",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/3.png",
+      "type": "camas",
+      "title": "Quarto"
+    }
+  ]
 }
