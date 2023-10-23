@@ -16,9 +16,10 @@
     flex-direction: column;
     font-family: 'Josefin Slab', serif;
     overflow: auto;
-    margin-top: 4rem;
+    margin-top:5rem;
     background: var(--color1);
 }
+
 
 .title{
     display: flex;
@@ -40,7 +41,6 @@
     flex-wrap: wrap;
     margin-top: 1rem;
     gap: 1rem;
-
 }
 
 .item{
