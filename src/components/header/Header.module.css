@@ -36,7 +36,6 @@
 }
 
 .input_container {
-    position: relative;
     width: 400px;
     max-width: 400px;
     height: 2.5em;
@@ -48,13 +47,10 @@
     border-radius: 5px;
 }
 
-.autocomplete {
-    position: absolute;
-    min-height: 100%;
+.autocomplete{
     display: flex;
     align-items: center;
 }
-
 
 .search_input {
     width: 300px;
@@ -71,6 +67,9 @@
 .search  {
     width: 2rem;
     height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: transparent;
     border: none;
     cursor: pointer;

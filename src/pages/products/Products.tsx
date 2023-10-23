@@ -5,13 +5,10 @@ import Cards from "../../components/cards/Cards"
 import { useContext } from "react"
 import { ProductContext } from "../../productContext/context"
 import { ItemProps } from "../../productContext/context"
-
 const Products = () => {
   const { itens, loading } = useContext(ProductContext)
   const [products, setProducts] = useState<ItemProps[]>();
   const params = useParams();
-
-  console.log(params)
 
   useEffect(() => {
     const itemFilter = itens?.filter(item => item.type === params.id);

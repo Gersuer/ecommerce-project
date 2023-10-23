@@ -11,12 +11,13 @@
 
 .home_container {
     width: 100%;
-    height: 78vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     font-family: 'Josefin Slab', serif;
-    padding: 1rem 0;
     overflow: auto;
+    margin-top: 4rem;
+    background: var(--color1);
 }
 
 .title{
@@ -39,6 +40,7 @@
     flex-wrap: wrap;
     margin-top: 1rem;
     gap: 1rem;
+
 }
 
 .item{
@@ -51,12 +53,13 @@
     gap: 1.5rem;
     background: white;
     padding: .5em 0;
+    background: var(--color1);
 }
 
 .item span{
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--color1);
+    color: var(--color4);
     font-weight: bold;
 }
 

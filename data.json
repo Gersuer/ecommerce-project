@@ -239,5 +239,57 @@
       "type": "camas",
       "title": "Quarto"
     }
+  ],
+
+  "carousel": [
+    {
+      "id": "1",
+      "name": "Berço 1",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/bercos/4.png",
+      "type": "bercos",
+      "title": "Infantil"
+    },
+    {
+      "id": "2",
+      "name": "Almofada 4",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "./src/assets/images/almofadas/4.png",
+      "type": "almofadas",
+      "title": "Sala"
+    },
+    {
+      "id": "3",
+      "name": "Cama 3",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/roupasdecama/4.png",
+      "type": "camas",
+      "title": "Quarto"
+    },
+    {
+      "id": "6",
+      "name": "Almofada 6",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "/src/assets/images/almofadas/6.png",
+      "type": "almofadas"
+    },
+    {
+      "id": "7",
+      "name": "Almofada 4",
+      "preco": "59.99",
+      "qtd": "0",
+      "total": "0",
+      "img": "./src/assets/images/almofadas/1.png",
+      "type": "almofadas",
+      "title": "Sala"
+    }
   ]
 }

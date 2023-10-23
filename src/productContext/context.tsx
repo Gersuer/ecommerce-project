@@ -22,16 +22,19 @@ interface ContextProps {
     addCart: (item: ItemProps) => void
     totalPurchase: number
     menuItems?: ItemProps[]
+    carousel: ItemProps[]
 }
 
 export const ProductContext = createContext({} as ContextProps);
 
 function ProductsProvider({ children }: ChildrenProps) {
     const [itens, setItens] = useState<ItemProps[]>();
-    const [menuItems, setMenuItems] = useState<ItemProps[]>()
+    const [menuItems, setMenuItems] = useState<ItemProps[]>();
     const [loading, setLoading] = useState(false);
     const [carrinho, setCarrinho] = useState<ItemProps[]>([]);
     const [totalPurchase, setTotalPurchased] = useState<number>(0);
+    const [carousel, setCarousel] = useState<ItemProps[]>([])
+
 
     useEffect(() => {
         let total = 0;
@@ -42,30 +45,46 @@ function ProductsProvider({ children }: ChildrenProps) {
     }, [carrinho])
 
     useEffect(() => {
+
         async function fetchItems() {
-            setLoading(true)
+            setLoading(true);
             await axios.get("http://localhost:3000/produtos")
                 .then(itens => {
-                    setItens(itens.data)
+                    setItens(itens.data);
+                    setLoading(false);
+
+                    return
                 }).catch(err => {
-                    console.log(err.message)
+                    console.log(err.message);
+                    setLoading(false);
+
+                    return
                 })
 
             await axios.get("http://localhost:3000/amostra")
                 .then(response => {
-                    setMenuItems(response.data)
+                    setMenuItems(response.data);
+                    setLoading(false);
+
+                    return
                 }).catch(err => {
-                    console.log(err)
+                    console.log(err);
+                    setLoading(false);
                 })
 
-            setLoading(false)
+            await axios.get("http://localhost:3000/carousel")
+                .then(response => {
+                    setCarousel(response.data);
+                    setLoading(false);
 
+                    return
+                }).catch(err => {
+                    console.log(err);
+                    setLoading(false);
+                })
         }
-
         fetchItems();
     }, []);
-
-    console.log(menuItems)
 
     function addCart(item: ItemProps) {
         //Verificar se o item já foi adicionado.
@@ -104,7 +123,8 @@ function ProductsProvider({ children }: ChildrenProps) {
                 carrinho,
                 addCart,
                 totalPurchase,
-                menuItems
+                menuItems,
+                carousel
             }}
         >
             {children}

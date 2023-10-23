@@ -17,10 +17,14 @@ const Menu = () => {
         </li>
         <li>
           <Link to='products/camas'>
-              Quarto
+            Quarto
           </Link>
         </li>
-        <li>Promoções</li>
+        <li>
+          <Link to='/sales'>
+            Promoções
+          </Link>
+        </li>
         <li>Suporte</li>
       </ul>
     </div>

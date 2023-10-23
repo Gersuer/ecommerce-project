@@ -7,6 +7,7 @@ import Error from './pages/error/Error'
 import Login from './pages/Login/Login'
 import Register from './pages/register/Register'
 import Carrinho from './pages/carrinho/Carrinho'
+import Sale from './pages/sale/Sale'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '*',
         element: <Error />
+      },
+      {
+        path: '/sales',
+        element:<Sale/>
       }
     ]
   },
