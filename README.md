@@ -61,6 +61,5 @@ json-server --watch data.json
 
 - [React Router Dom](https://react-icons.github.io/react-icons/)
 - [React + Vite](https://vitejs.dev/guide/)
-- [Documentation](https://linktodocumentation)
 
 
